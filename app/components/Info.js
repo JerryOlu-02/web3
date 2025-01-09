@@ -1,38 +1,55 @@
+'use client';
+
 import './Info.scss';
+import { useRouter } from 'next/navigation';
 
 export default function Info() {
+  const router = useRouter();
+
   return (
-    <section className="info">
+    <>
       <div className="opacity"></div>
-      <h1>Alpha Wallet Tracking</h1>
 
-      <article>
-        <h5>Why INSIDER?</h5>
+      <section className="info">
+        <h1>Alpha Wallet Tracking</h1>
 
-        <p>
-          Why use TRADR X? It’s a lot easier to win when you’re an insider.
-          TRADR X utilises a proprietary advanced wallet tracking system to
-          follow the moves of both high performing and ‘insider’ traders on
-          Solana, providing our users with an edge like no other.
-        </p>
-      </article>
+        <article>
+          <h5>What is INSIDER?</h5>
 
-      <article>
-        <h5>Why INSIDER?</h5>
+          <p>
+            <strong>
+              INSIDER is a game which primary focus is to launch Pumpfun
+              projects in order to give its players opportunities for profits.
+              Being an INSIDER means getting in on the action early. You’ll get
+              exclusive access to these plays before anyone else.
+            </strong>
+          </p>
+        </article>
 
-        <p>
-          Why use TRADR X? It’s a lot easier to win when you’re an insider.
-          TRADR X utilises a proprietary advanced wallet tracking system to
-          follow the moves of both high performing and ‘insider’ traders on
-          Solana, providing our users with an edge like no other.
-        </p>
-      </article>
+        {/* <article>
+      <h5>📈 INSIDER | 0.5 SOL Weekly / 2 SOL Monthly</h5>
 
-      <aside>
-        <div></div>
-        <button>JOIN INSIDER</button>
-        <div></div>
-      </aside>
-    </section>
+      <ul>
+        <li>
+          <strong>
+            Full Access to our dedicated Telegram based alpha wallet tracking
+            system.
+          </strong>
+        </li>
+        <li>
+          <strong>24/7 Tailored Support</strong>
+        </li>
+      </ul>
+    </article> */}
+
+        <aside>
+          <div></div>
+          <button onClick={() => router.push('https://t.me/InsidersPortal')}>
+            JOIN INSIDER
+          </button>
+          <div></div>
+        </aside>
+      </section>
+    </>
   );
 }
