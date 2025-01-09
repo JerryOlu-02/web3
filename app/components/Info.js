@@ -11,7 +11,7 @@ export default function Info() {
       <div className="opacity"></div>
 
       <section className="info">
-        <h1>Alpha Wallet Tracking</h1>
+        <h1>The Insider Ecosystem</h1>
 
         <article>
           <h5>What is INSIDER?</h5>
