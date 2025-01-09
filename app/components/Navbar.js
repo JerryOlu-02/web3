@@ -37,7 +37,7 @@ export default function Navbar() {
   const activeNav = showNav ? 'active' : '';
 
   return (
-    <nav ref={navbarRef} className={`navbar`}>
+    <nav ref={navbarRef} className={`navbar ${activeNav}`}>
       <div className="navbar-logo">
         <Link href="/">INSIDER</Link>
       </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href="/info">
               <div>Info</div>
             </Link>
           </li>
