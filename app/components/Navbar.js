@@ -36,6 +36,11 @@ export default function Navbar() {
 
   const activeNav = showNav ? 'active' : '';
 
+  // CLOSE MENU BAR(NAVLIST BAR)
+  const closeBar = function () {
+    setShowNav((isactive) => (isactive ? !isactive : isactive));
+  };
+
   return (
     <nav ref={navbarRef} className={`navbar ${activeNav}`}>
       <div className="navbar-logo">
@@ -44,17 +49,17 @@ export default function Navbar() {
 
       <ul className={`nav-list ${activeNav}`}>
         <div className="nav-list-div">
-          <li>
+          <li onClick={() => closeBar()}>
             <Link href="/">
               <div>Home</div>
             </Link>
           </li>
-          <li>
+          <li onClick={() => closeBar()}>
             <Link href="/info">
               <div>Info</div>
             </Link>
           </li>
-          <li>
+          <li onClick={() => closeBar()}>
             <Link href="/contact">
               <div>Contact</div>
             </Link>
