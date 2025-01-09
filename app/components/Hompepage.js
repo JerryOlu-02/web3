@@ -13,10 +13,14 @@ export default function Homepage() {
 
         <div className="insider-div">
           <div>
-            <Image src={XLogo} alt="X_Logo" />
-            <Image src={telegramLogo} alt="Telegram_Logo" />
+            <button>
+              <Image src={XLogo} alt="X_Logo" />
+            </button>
+            <button>
+              <Image src={telegramLogo} alt="Telegram_Logo" />
+            </button>
           </div>
-          <button>JOIN INSIDER</button>
+          <button className="home-btn">JOIN INSIDER</button>
         </div>
       </aside>
     </section>
